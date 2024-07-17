@@ -5,6 +5,7 @@ function Login() {
     const [ username, setUsername] = useState('')
     const [password, setPassword] = useState('')
 
+    // to access state (global) we use "useContext hook" and provide context to them
     const {setUser} = useContext(UserContext)
     
     const handleSubmit = (e) => {

@@ -20,14 +20,17 @@ function App() {
 
   // actual change in theme
   useEffect(() => {
+    // this is javascript and tailwiind exclusive
     document.querySelector('html').classList.remove("light", "dark")
     document.querySelector('html').classList.add(themeMode)
 
   }, [themeMode])
   
 
-  // THE METHOD HERE -> LIGHT THEME, ... DOES HAVE FUNCTIONALITY
+  // THE METHOD HERE -> LIGHT THEME, ... DOES HAVE FUNCTIONALITY as we have defined it
   return (
+    // here themeProvider me value and method ka access le rhe hai
+    // so that components ko access milega 
     <ThemeProvider value= {{themeMode, lightTheme, darkTheme}}>
 
       <div className="flex flex-wrap min-h-screen items-center">

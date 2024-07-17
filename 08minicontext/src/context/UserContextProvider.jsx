@@ -7,7 +7,7 @@ const UserContextProvider = ({children}) => {
 
     const [user, setUser] = React.useState(null)
 
-    return (
+        return (
         <UserContext.Provider value = {{user, setUser}}>
             {children}
         </UserContext.Provider>
